@@ -1,0 +1,64 @@
+<!DOCTYPE = html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>lsss</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sec bg">
+            <a href="nextstep.html">
+                <img src="cs.jpg" width="500px" class="pos">
+                <img src="rian.gif" class="pos">
+            </a>
+        </div>
+    </div>
+
+    <div class="main2">
+
+        <div class="green">
+            <img id="pig" src="pig_static.png" width="350px">
+            <audio id="audio" src="handler.mp3"></audio>
+        </div>
+
+        <div class="eye">
+            <img src="eye.gif" width="154px">
+        </div>
+
+    </div>
+
+    <script>
+        var audio = document.getElementById("audio");
+        var img = document.getElementById("pig");
+
+
+        function play() {
+            audio.play();
+        }
+
+        function stop() {
+            audio.pause();
+        }
+
+        function change() {
+            img.src = "pig2.gif"
+        }
+
+        function rechange() {
+            img.src = "pig_static.png"
+        }
+
+
+        img.addEventListener('mouseover', play);
+        img.addEventListener('mouseout', stop);
+
+        img.addEventListener('mouseover', change);
+        img.addEventListener('mouseout', rechange);
+
+    </script>
+</body>
+
+</html>

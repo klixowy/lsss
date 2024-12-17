@@ -1,0 +1,69 @@
+body{
+    background-image: url(mis.png);
+    background-size: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+p {color: white}
+
+div.main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.main2{
+    background-image: url(yb.png);
+    border: 1px solid rgb(255, 0, 191);
+
+    display: flex;
+    align-items: center;
+}
+
+.eye{
+    border: 1px solid black;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+    /*
+    .eye:hover{
+        transform: translate( 500px);
+        -webkit-transform: translate(500px);
+        -moz-transform: translate(500px);
+    }
+    */
+
+.bg {
+    border: 1px solid black;
+}
+.sec{
+    animation: anim 5s linear;
+    animation-iteration-count: infinite;
+}
+
+.pos{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    margin: auto;
+}
+
+@keyframes anim {
+    0% {transform: translate(-600px)}
+    50% {transform: translate(100px)}
+    100% {transform: translate(-600px)}
+}
+
+
+@keyframes anim2 {
+    0% {transform: translate(-600px)}
+    50% {transform: translate(100px)}
+    100% {transform: translate(-600px)}
+}
